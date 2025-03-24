@@ -1,6 +1,42 @@
 {
     "users": [],
-    "products": [],
+    "products": [
+        {
+            "id": 1,
+            "name": "IPhone 16 Pro Max 256GB | Chính hãng VN/A",
+            "description": "iPhone 16 Pro Max sở hữu màn hình Super Retina XDR OLED 6.9 inch với công nghệ ProMotion, mang lại trải nghiệm hiển thị mượt mà và sắc nét, lý tưởng cho giải trí và làm việc.",
+            "sell_price": 20000000,
+            "buy_price": 18000000,
+            "stock": 10,
+            "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png",
+            "variants": [
+                {
+                    "key": [
+                        {
+                            "id": 1,
+                            "value": "Titan sa mạc"
+                        },
+                        {
+                            "id": 1,
+                            "value": "256GB"
+                        }
+                    ]
+                },
+                {
+                    "key": [
+                        {
+                            "id": 2,
+                            "value": "Titan Đen"
+                        },
+                        {
+                            "id": 2,
+                            "value": "128GB"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "variants": [],
     "carts": [],
     "orders": []
