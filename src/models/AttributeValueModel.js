@@ -8,6 +8,7 @@ const attributeValueSchema = new mongoose.Schema(
       required: true,
     },
     name: String,
+    status: { type: Boolean, default: false },
     extraPrice: { type: Number, default: 0 }
   },
   { timestamps: true, versionKey: false }
