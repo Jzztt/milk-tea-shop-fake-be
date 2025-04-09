@@ -4,8 +4,6 @@ const createAttribute = async (req, res) => {
   try {
     const { name, status } = req.body;
 
-
-
     const existingAttribute = await Attribute.findOne({ name });
     if (existingAttribute) {
       return res.status(400).json({
@@ -14,8 +12,7 @@ const createAttribute = async (req, res) => {
       });
     }
     const attribute = new Attribute({ name, status });
-    console.log(attribute);
-    // await attribute.save();
+    await attribute.save();
 
     res.status(201).json({
       success: true,
