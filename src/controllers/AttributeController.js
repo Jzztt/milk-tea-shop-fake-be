@@ -2,7 +2,9 @@ import Attribute from "../models/AttributeModel";
 
 const createAttribute = async (req, res) => {
   try {
-    const { name } = req.body;
+    const { name, status } = req.body;
+
+
 
     const existingAttribute = await Attribute.findOne({ name });
     if (existingAttribute) {
@@ -11,8 +13,10 @@ const createAttribute = async (req, res) => {
         message: "Attribute with this name already exists",
       });
     }
-    const attribute = new Attribute({ name });
-    await attribute.save();
+    const attribute = new Attribute({ name, status });
+    console.log(attribute);
+    // await attribute.save();
+
     res.status(201).json({
       success: true,
       message: "Created successfully",
