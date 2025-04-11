@@ -1,3 +1,4 @@
+import Attribute from "../models/AttributeModel";
 import AttributeValue from "../models/AttributeValueModel";
 
 const createAttributeValue = async (req, res) => {
